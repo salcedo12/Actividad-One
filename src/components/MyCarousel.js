@@ -9,7 +9,7 @@ const MyCarousel = () => {
   return (
     <div>
         
-     
+{/*      
       <Carousel>
 
 <Carousel.Item>
@@ -36,6 +36,30 @@ const MyCarousel = () => {
     id="sizeImg"
     />
 </Carousel.Item>
+</Carousel> */}
+
+<Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={bannerOne}
+      alt="First slide"
+      />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={bannerTwo}
+      alt="Second slide"
+      />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img 
+      className="d-block w-100"
+      src={bannerThree}
+      alt="Third slide"
+      />
+  </Carousel.Item>
 </Carousel>
       
       <Container className="p-5 bg-success text-center" fluid>

@@ -22,7 +22,7 @@ function NavBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav >
-              <Link className="enderezar text-decoration-none" id="colorNavLink" to="/">
+              <Link className="enderezar text-decoration-none " id="colorNavLink" to="/">
                 {" "}
                 <AiOutlineHome />
                 HOME
