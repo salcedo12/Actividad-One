@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import "../css/character.css";
 import { StatusColor } from "./StatusColor";
+import { Link } from "react-router-dom";
 function CharacterPage() {
     const [characters, setCharacters] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
@@ -127,6 +128,7 @@ function CharacterPage() {
                     <Row>
                     {characters.map((character) => (
                         <Col key={character.id} xs={12} sm={6} md={4} lg={3} xl={3}>
+                            
                         <Card className="my-3">
                             <Card.Img
                             variant="top"
@@ -136,8 +138,7 @@ function CharacterPage() {
                             <Card.Body>
                             <Card.Title>{character.name}</Card.Title>
                             <Card.Text>Status: {character.status==="Alive"?<span className="bg-success text-white rounded p-1">{character.status}</span> :<span className="bg-danger text-white rounded p-1">{character.status}</span>}</Card.Text>
-                            <Card.Text>Gender: {character.gender}</Card.Text>
-                            <Card.Text>Species: {character.species}</Card.Text>
+                            <Link className="text-decoration-none border  bg-info rounded p-2 " to={`/characters/${character.id}`}>info</Link>
                             </Card.Body>
                         </Card>
                         </Col>

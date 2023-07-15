@@ -5,6 +5,7 @@ import {Home} from "./components/pages/Home";
 import * as ReactDOM from "react-dom/client";
 import {  RouterProvider, createHashRouter } from "react-router-dom";
 import EpisodeComponent from "./components/EpisodeComponent";
+import CharacterDetails from "./components/Characters";
 
 
 const router = createHashRouter([
@@ -20,6 +21,11 @@ const router = createHashRouter([
     path:"/EpisodeComponent",
     element:<EpisodeComponent/>
   }
+  ,{
+    path:"/characters/:id",
+    element:<CharacterDetails/>
+
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -27,15 +33,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 )
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <>
-//     <HashRouter>
-//       <App/>
-//     </HashRouter>
-//     {/* <Character/>  */}
-//     {/* <EpisodeComponent/> */}
-//   </>
-// );
 
