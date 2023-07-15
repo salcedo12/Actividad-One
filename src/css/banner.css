@@ -1,0 +1,15 @@
+#sizeImg{
+    height: 600px;
+    width: 100%;
+}
+
+.justify{
+    text-align: justify;
+    color: white;
+    font-size: 24px;
+}
+
+.flecha{
+    font-size: 50px;
+    color: aliceblue;
+}

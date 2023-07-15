@@ -1,0 +1,25 @@
+@font-face{
+    font-family:  Get Schwifty;
+    src: url(../fonts/get_schwifty.ttf);
+}
+
+#nav{
+    background-color: #272B33;
+    color: white;
+    font-family:  Get Schwifty;
+    font-size: 25px;
+    
+}
+#wiki{
+    color: #54B534;
+}
+#colorNavLink{
+    color: white;
+    text-transform: capitalize;
+}
+
+.enderezar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
